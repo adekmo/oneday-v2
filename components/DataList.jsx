@@ -63,7 +63,7 @@ const DataList = ({ blogs, setPosts }) => {
                                     // handleRefresh();
                                     setPosts(filteredPosts);
                                     router.push('/');
-                                    // handleRefresh();
+                                    handleRefresh();
                                 } catch (error) {
                                     console.log(error);
                                 }
