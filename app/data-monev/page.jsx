@@ -279,13 +279,13 @@ const DataMonev = () => {
                                     value={monev.bulan}
                                     onChange={(e) => setMonev({ ...monev, bulan: e.target.value })}
                                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-lg sm:leading-6">
+                                    <option value="Mei">Mei</option>
                                     <option value="Juni">Juni</option>
-                                    <option value="Juli">Juli</option>
-                                    <option value="Agustus">Agustus</option>
+                                    {/* <option value="Agustus">Agustus</option>
                                     <option value="September">September</option>
                                     <option value="Oktober">Oktober</option>
                                     <option value="November">November</option>
-                                    <option value="Desember">Desember</option>
+                                    <option value="Desember">Desember</option> */}
                                 </select>
                             </div>
                         </div>
