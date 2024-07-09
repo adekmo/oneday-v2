@@ -33,7 +33,7 @@ const DataMonev = () => {
     const [monev, setMonev] = useState({
         creator,
         harike: '1',
-        bulan: 'Juni',
+        bulan: 'Mei',
         diberikan_telur: 'Ya',
         porsi_telur_dihabis: '1/4 Porsi',
         // waktu_beri_telur: '',
