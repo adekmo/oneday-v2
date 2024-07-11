@@ -105,7 +105,11 @@ const BalitaSchema = new Schema({
         type: String,
         required: [true, "This Input is required"],
     },
-    pendapatan_per_bulan: {
+    // pendapatan_per_bulan: {
+    //     type: String,
+    //     // required: [true, "This Input is required"],
+    // },
+    pengeluaran_makan_perbulan: {
         type: String,
         required: [true, "This Input is required"],
     },

@@ -16,6 +16,7 @@ const DataList = ({ blogs, setPosts }) => {
             <table className='min-w-full border-collapse border-spacing-8 border-slate-500 bg-slate-100 mt-10'>
                 <thead>
                     <tr>
+                        <th className="px-5 border border-slate-600">No</th>
                         <th className="px-20 border border-slate-600">Nama Balita</th>
                         <th className="px-20 border border-slate-600">NIK</th>
                         <th className="px-5 border border-slate-600">Jenis Kelamin</th>
@@ -26,7 +27,7 @@ const DataList = ({ blogs, setPosts }) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {blogs.map((blog) => {
+                    {blogs.map((blog, index) => {
                         const umur = new Date(blog.tanggal_lahir);
                         const tglNow = new Date();
                         const selisihTahun = tglNow.getFullYear() - umur.getFullYear();
@@ -87,7 +88,8 @@ const DataList = ({ blogs, setPosts }) => {
                         return (
 
                             <tr key={blog._id}>
-                                <td className="px-2 border border-slate-700">{blog.nama}</td>
+                                <td className="text-center border border-slate-700">{index +1}</td>
+                                <td className="border text-center border-slate-700">{blog.nama}</td>
                                 <td className="border text-center border-slate-700">{blog.nik_anak}</td>
                                 <td className="border text-center border-slate-700">{blog.jenis_kelamin}</td>
                                 <td className="border text-center border-slate-700">{umurText}</td>

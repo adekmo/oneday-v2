@@ -340,13 +340,13 @@ const Form = ({
                         </select>
                     </div>
                     <div className="sm:col-span-3">
-                        <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">Pendapatan per-bulan Keluarga</label>
+                        <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">Pengeluaran Makan per-bulan Keluarga</label>
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                                 type="text"
                                 required
-                                value={formData.pendapatan_per_bulan}
-                                onChange={(e) => setFormData({ ...formData, pendapatan_per_bulan: e.target.value })}
+                                value={formData.pengeluaran_makan_perbulan}
+                                onChange={(e) => setFormData({ ...formData, pengeluaran_makan_perbulan: e.target.value })}
                                 className="block flex-1 border-0 bg-transparent text-lg py-1.5 pl-1 text-gray-900" />
                         </div>
                     </div>

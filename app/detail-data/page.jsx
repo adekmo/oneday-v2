@@ -143,6 +143,27 @@ const DetailData = () => {
         return item.creator && item.creator._id === creator;
     });
 
+    // Fungsi handleDelete diletakkan di luar iterasi map
+//     const handleDelete = async (id) => {
+//     const confirmDelete = window.confirm("Anda yakin?");
+//     if (confirmDelete) {
+//         try {
+//             const response = await fetch(`/api/data-balita/${creator}`, {
+//                 method: 'DELETE'
+//             });
+
+//             if (response.ok) {
+//                 const filteredPosts = hasilUkuran.filter(p => p._id !== id);
+//                 setHasilUkuran(filteredPosts);
+//             } else {
+//                 console.error('Gagal menghapus data pengukuran:', response.status);
+//             }
+//         } catch (error) {
+//             console.error('Kesalahan saat menghapus data:', error);
+//         }
+//     }
+// }
+
     // console.log('data', matchingPengukuranData);
 
     return (
@@ -299,10 +320,12 @@ const DetailData = () => {
                                 <th className="px-20 border border-slate-600">Tinggi Bandan / Panjang Badan</th>
                                 <th className="px-5 border border-slate-600">Berat Badan</th>
                                 <th className="px-20 border border-slate-600">LLA</th>
+                                <th className="px-20 border border-slate-600">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             {Array.isArray(matchingPengukuranData) && matchingPengukuranData.map((ukuran) => {
+
 
                                 const umur = new Date(ukuran.tanggal_pengukuran);
                                 const tglHasil = umur.toLocaleDateString('en-GB', {
@@ -317,6 +340,16 @@ const DetailData = () => {
                                         <td className="border text-center border-slate-700">{ukuran.tinggi_panjang_badan} cm</td>
                                         <td className="border text-center border-slate-700">{ukuran.berat_badan} kg</td>
                                         <td className="border text-center border-slate-700">{ukuran.lla} cm</td>
+                                        <td className="border text-center border-slate-700">
+                                            <div className="flex justify-between items-center gap-2 p-3">
+                                            <div className="w-28 h-10 text-center px-1 py-2 text-sm rounded-lg font-bold bg-red-500 text-white cursor-pointer hover:bg-red-700 flex gap-1 justify-center items-center" /*onClick={() => handleDelete(ukuran._id)}*/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                </svg>
+                                                Delete
+                                            </div>
+                                            </div>
+                                        </td>
 
                                     </tr>
                                 )
