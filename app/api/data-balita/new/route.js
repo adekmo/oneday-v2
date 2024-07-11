@@ -29,7 +29,7 @@ export const POST = async (req, res) => {
         no_kk,
         nama_ot,
         pendidikan_terakhir_ot,
-        pendapatan_per_bulan,
+        pengeluaran_makan_perbulan,
         nohp,
         asuransi,
         airbersih,
@@ -68,7 +68,7 @@ export const POST = async (req, res) => {
             no_kk,
             nama_ot,
             pendidikan_terakhir_ot,
-            pendapatan_per_bulan,
+            pengeluaran_makan_perbulan,
             nohp,
             asuransi,
             airbersih,
@@ -82,6 +82,7 @@ export const POST = async (req, res) => {
 
         return new Response(JSON.stringify(newPrompt), { status: 201 })
     } catch (error) {
-        return new Response("Fail to create a new Prompt", {status: 500})
+        console.error('Error creating new data:', error);
+        return new Response(JSON.stringify({ message: 'Gagal menambahkan data balita', error: error.message }), { status: 500 });
     }
 }
