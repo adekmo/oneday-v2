@@ -73,7 +73,8 @@ export const PATCH = async (request, {
         no_kk,
         nama_ot,
         pendidikan_terakhir_ot,
-        pendapatan_per_bulan,
+        // pendapatan_per_bulan,
+        pengeluaran_makan_perbulan,
         nohp,
         asuransi,
         airbersih,
@@ -117,7 +118,8 @@ export const PATCH = async (request, {
         existingPrompt.no_kk = no_kk;
         existingPrompt.nama_ot = nama_ot;
         existingPrompt.pendidikan_terakhir_ot = pendidikan_terakhir_ot;
-        existingPrompt.pendapatan_per_bulan = pendapatan_per_bulan;
+        // existingPrompt.pendapatan_per_bulan = pendapatan_per_bulan;
+        existingPrompt.pengeluaran_makan_perbulan = pengeluaran_makan_perbulan;
         existingPrompt.nohp = nohp;
         existingPrompt.asuransi = asuransi;
         existingPrompt.airbersih = airbersih;
