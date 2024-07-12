@@ -76,21 +76,3 @@ export const POST = async (req, res) => {
         })
     }
 }
-
-export const DELETE = async (req, { params }) => {
-    const { pengukuranId } = params;
-
-    try {
-        await connectToDB();
-
-        const pengukuran = await Pengukuran.findByIdAndDelete(pengukuranId);
-
-        if (!pengukuran) {
-            return new Response("Pengukuran not found", { status: 404 });
-        }
-
-        return new Response("Pengukuran deleted successfully", { status: 200 });
-    } catch (error) {
-        return new Response("Failed to delete Pengukuran", { status: 500 });
-    }
-}
