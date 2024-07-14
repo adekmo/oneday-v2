@@ -281,7 +281,7 @@ const DetailData = () => {
 
                         </div>
                         <div className="sm:col-span-4">
-                            <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">LLA</label>
+                            <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">LILA</label>
                             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                                 <input
                                     type="text"
@@ -319,7 +319,7 @@ const DetailData = () => {
                                 <th className="px-20 border border-slate-600">Tanggal Pengukuran</th>
                                 <th className="px-20 border border-slate-600">Tinggi Bandan / Panjang Badan</th>
                                 <th className="px-5 border border-slate-600">Berat Badan</th>
-                                <th className="px-20 border border-slate-600">LLA</th>
+                                <th className="px-20 border border-slate-600">LILA</th>
                                 <th className="px-20 border border-slate-600">Aksi</th>
                             </tr>
                         </thead>
