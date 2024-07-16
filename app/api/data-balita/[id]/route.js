@@ -49,7 +49,7 @@ export const PATCH = async (request, {
 }) => {
     const {
         nik_anak,
-        nik_kk,
+        // nik_kk,
         nama,
         jenis_kelamin,
         tanggal_lahir,
@@ -69,8 +69,8 @@ export const PATCH = async (request, {
         vitamina,
         penyakit_penyerta,
         cacingan,
-        nik_ot,
-        no_kk,
+        // nik_ot,
+        // no_kk,
         nama_ot,
         pendidikan_terakhir_ot,
         // pendapatan_per_bulan,
@@ -94,7 +94,7 @@ export const PATCH = async (request, {
         });
 
         existingPrompt.nik_anak = nik_anak;
-        existingPrompt.nik_kk = nik_kk;
+        // existingPrompt.nik_kk = nik_kk;
         existingPrompt.jenis_kelamin = jenis_kelamin;
         existingPrompt.nama = nama;
         existingPrompt.tanggal_lahir = tanggal_lahir;
@@ -114,8 +114,8 @@ export const PATCH = async (request, {
         existingPrompt.vitamina = vitamina;
         existingPrompt.penyakit_penyerta = penyakit_penyerta;
         existingPrompt.cacingan = cacingan;
-        existingPrompt.nik_ot = nik_ot;
-        existingPrompt.no_kk = no_kk;
+        // existingPrompt.nik_ot = nik_ot;
+        // existingPrompt.no_kk = no_kk;
         existingPrompt.nama_ot = nama_ot;
         existingPrompt.pendidikan_terakhir_ot = pendidikan_terakhir_ot;
         // existingPrompt.pendapatan_per_bulan = pendapatan_per_bulan;

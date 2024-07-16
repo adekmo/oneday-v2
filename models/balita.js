@@ -5,10 +5,10 @@ const BalitaSchema = new Schema({
         type: String,
         required: [true, "Nik Anak is required"],
     },
-    nik_kk: {
-        type: String,
-        required: [true, "NIk KK is required"],
-    },
+    // nik_kk: {
+    //     type: String,
+    //     required: [true, "NIk KK is required"],
+    // },
     nama: {
         type: String,
         required: [true, "Nama is required"],
@@ -89,14 +89,14 @@ const BalitaSchema = new Schema({
     //     type: String,
     //     required: [true, "This Input is required"],
     // },
-    nik_ot: {
-        type: String,
-        required: [true, "This Input is required"],
-    },
-    no_kk: {
-        type: String,
-        required: [true, "This Input is required"],
-    },
+    // nik_ot: {
+    //     type: String,
+    //     required: [true, "This Input is required"],
+    // },
+    // no_kk: {
+    //     type: String,
+    //     required: [true, "This Input is required"],
+    // },
     nama_ot: {
         type: String,
         required: [true, "This Input is required"],

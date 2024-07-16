@@ -4,7 +4,7 @@ import Balita from "@/models/balita";
 
 export const POST = async (req, res) => {
     const { nik_anak,
-        nik_kk,
+        // nik_kk,
         nama,
         jenis_kelamin,
         tanggal_lahir,
@@ -25,8 +25,8 @@ export const POST = async (req, res) => {
         penyakit_penyerta,
         cacingan,
         // kia,
-        nik_ot,
-        no_kk,
+        // nik_ot,
+        // no_kk,
         nama_ot,
         pendidikan_terakhir_ot,
         pengeluaran_makan_perbulan,
@@ -43,7 +43,7 @@ export const POST = async (req, res) => {
         await connectToDB();
         const newPrompt = new Balita({
             nik_anak,
-            nik_kk,
+            // nik_kk,
             nama,
             jenis_kelamin,
             tanggal_lahir,
@@ -64,8 +64,8 @@ export const POST = async (req, res) => {
             penyakit_penyerta,
             cacingan,
             // kia,
-            nik_ot,
-            no_kk,
+            // nik_ot,
+            // no_kk,
             nama_ot,
             pendidikan_terakhir_ot,
             pengeluaran_makan_perbulan,

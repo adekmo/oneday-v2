@@ -37,7 +37,7 @@ const Form = ({
                                 className="block flex-1 border-0 bg-transparent text-lg py-1.5 pl-1 text-gray-900" />
                         </div>
                     </div>
-                    <div className="sm:col-span-4">
+                    {/* <div className="sm:col-span-4">
                         <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">NIK KK</label>
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
@@ -48,7 +48,7 @@ const Form = ({
                                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-lg text-gray-900"
                             />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="sm:col-span-4">
                         <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">Nama Lengkap</label>
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -293,7 +293,7 @@ const Form = ({
                     <div className="sm:col-span-6">
                         <h2 className="text-lg font-bold text-gray-900">Identitas Orang Tua</h2>
                     </div>
-                    <div className="sm:col-span-3">
+                    {/* <div className="sm:col-span-3">
                         <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">NIK Ayah</label>
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
@@ -303,8 +303,8 @@ const Form = ({
                                 onChange={(e) => setFormData({ ...formData, nik_ot: e.target.value })}
                                 className="block flex-1 border-0 bg-transparent text-lg py-1.5 pl-1 text-gray-900" />
                         </div>
-                    </div>
-                    <div className="sm:col-span-4">
+                    </div> */}
+                    {/* <div className="sm:col-span-4">
                         <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">NIK Ibu</label>
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
@@ -314,7 +314,7 @@ const Form = ({
                                 onChange={(e) => setFormData({ ...formData, no_kk: e.target.value })}
                                 className="block flex-1 border-0 bg-transparent text-lg py-1.5 pl-1 text-gray-900" />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="sm:col-span-3">
                         <label htmlFor="username" className="block text-lg font-medium leading-6 text-gray-900">Nama Orang Tua</label>
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
