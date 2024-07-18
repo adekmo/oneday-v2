@@ -455,6 +455,8 @@ const DataMonev = () => {
                                     <option value="1/2 Porsi">1/2 Porsi</option>
                                     <option value="3/4 Porsi">3/4 Porsi</option>
                                     <option value="1 Porsi">1 Porsi</option>
+                                    <option value="2 Porsi">2 Porsi</option>
+                                    <option value="Lebih Dari 3 Porsi">Lebih dari 3 Porsi</option>
                                     <option value="Tidak Ada">Tidak Ada</option>
                                 </select>
                             </div>
