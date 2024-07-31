@@ -244,8 +244,8 @@ const Form = ({
                     <div className="sm:col-span-2">
                         <label htmlFor="country" className="block text-lg font-medium leading-6 text-gray-900">Penyakit Penyerta</label>
                         <select
-                            value={formData.penyerta}
-                            onChange={(e) => setFormData({ ...formData, penyerta: e.target.value })}
+                            value={formData.penyakit_penyerta}
+                            onChange={(e) => setFormData({ ...formData, penyakit_penyerta: e.target.value })}
                             className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-lg sm:leading-6">
                             <option value="Ya">Ya</option>
                             <option value="Tidak">Tidak</option>
